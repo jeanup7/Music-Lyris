@@ -1,3 +1,7 @@
+import pygame
+pygame.mixer.init()
+pygame.mixer.music.load("stand_by_me.mp3")
+pygame.mixer.music.play()
 from rich.console import Console
 import time
 import os
@@ -57,25 +61,25 @@ if __name__ == "__main__":
 
     linhas = [
         # 🎸 INTRODUÇÃO
-        ("", 0.01, 6.0, "#000000"),
+        ("", 0.01, 15.9, "#000000"),
 
         # 🌙 Início 
         [
             ("When the ", "#6CA6CD", 0.04),
-            ("night", "bold #1E90FF", 0.15),
+            ("night", "bold #1E90FF", 0.35),
             (" has come", "#6CA6CD", 0.06),
         ],
 
         # Pausa longa instrumental
-        ("", 0.01, 3.8, "#000000"),
-
+        ("", 0.01, 2.0, "#000000"),
+        
         [
             ("And the land is ", "#87CEFA", 0.05),
             ("dark", "bold #4682B4", 0.16),
         ],
 
         # ⏳ PAUSA REDUZIDA PARA ALCANÇAR A MÚSICA (De 3.5 para 2.5)
-        ("", 0.01, 2.5, "#000000"),
+        ("", 0.01, 1.4, "#000000"),
 
         # 🌕 (0:25) - Digitação mais rápida no começo da frase
         [
